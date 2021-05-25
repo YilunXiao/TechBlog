@@ -1,0 +1,1 @@
+// Connects to SQL database using sequelize

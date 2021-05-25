@@ -1,0 +1,1 @@
+// Contains sequelize models for dtabase
