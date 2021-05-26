@@ -10,4 +10,4 @@ Blog.belongsTo(User, {
   foreignKey: 'user_id',
 });
 
-module.exports = { User, Gallery, Painting };
+module.exports = { User, Blog };
