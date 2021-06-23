@@ -36,7 +36,7 @@ router.get('/profile', async (req, res) => {
 router.get('/dashboard', async (req, res) => {
   try {
     // Get all projects and JOIN with user data
-    const blogData = await blog.findAll({
+    const blogData = await Blog.findAll({
       include: [
         {
           model: User,

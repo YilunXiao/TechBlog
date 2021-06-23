@@ -1,3 +1,23 @@
-<div>
-    Dashboard
+<div class="p-5">
+<!-- Loop over each object in the projects array -->
+{{#each blogs as |blog| }}
+<div class="row mb-4 blog">
+  <div class="col-md-5">
+    <h2>
+      <!-- Call helper function with triple brackets to render the emoji span as HTML -->
+      {{blog.title}}
+    </h2>
+    <p>
+      <!-- Pass needed_funding value to the helper function -->
+      {{blog.content}}
+    </p>
+    <p>Created by {{blog.user.name}} on {{format_date blog.date_created}}</p>
+  </div>
+  <div class="col-md-7">
+    <p>
+      {{blog.description}}
+    </p>
+  </div>
+</div>
+{{/each}}
 </div>
